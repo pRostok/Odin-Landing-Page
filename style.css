@@ -1,0 +1,176 @@
+body {
+    font-family: "sacramento", sans-serif;
+    background-image: url(../images/q8.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: "sacramento", sans-serif;
+    font-size: 70px;
+}
+
+.head {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: -50px;
+}
+
+.headText {
+    display: flex;
+    position: relative;
+    top: 450px;
+    flex-wrap: wrap;
+    margin-right: 250px;
+    left: 420px;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.headImg {
+    border-radius: 50px;
+    border: 2px solid;
+    display: flex;
+    position: relative;
+    left: 900px;
+    margin-top: -150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoTitle {
+    font-family: "sacramento", sans-serif;
+    font-size: 55px;
+    color: #d4d4d4;
+}
+
+.pictures {
+    margin-top: 250px;
+    margin-bottom: 250px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    opacity: 60%;
+    color: white;
+    padding-bottom: 55px;
+    padding-top: 50px;
+
+}
+
+.pict {
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
+}
+
+.imDiv {
+    max-width: 200px;
+}
+
+.imDiv img {
+    border-radius: 25px;
+    border: 2px solid;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
+.imDiv img:hover {
+    box-shadow: 6px 6px rgb(62, 58, 58);
+}
+
+.quote {
+    text-align: center;
+    font-size: 46px;
+    color: #141d2a;
+    margin-top: -50px;
+}
+
+.author {
+    margin-left: 360px;
+    font-size: 40px;
+    padding-bottom: 110px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #222f2f;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    gap: 1px;
+    background-color: rgb(59, 52, 52);
+}
+
+.bigCats {
+    display: flex;
+    width: 90vw;
+    margin-left: 135px;
+}
+
+.container h2 {
+    font-size: 40px;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 50px;
+    color: rgb(255, 0, 0);
+    cursor: crosshair;
+    flex: 0.5;
+    margin: 3px;
+    position: relative;
+    transition: flex 1s ease-in;
+    gap: 2px;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    right: 350px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+}
