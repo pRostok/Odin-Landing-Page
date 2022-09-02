@@ -12,6 +12,7 @@ body {
 .navbar {
     background: black;
     display: flex;
+    position: fixed;
     width: 100vw;
     padding-left: 50px;
     padding-right: 50px;
@@ -237,4 +238,13 @@ a:active {
     right: 350px;
     margin: 0;
     opacity: 0;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
 }
