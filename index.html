@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="head">
+
+    <div class="navbar">
+        <a class="left" href="">
+            <h2>Cats</h2>
+        </a>
+
+        <div class="right">
+            <a href="#main">About</a>
+            <a href="#pict">Pictures</a>
+            <a href="#breeds">Breeds</a>
+            <a href="#questions">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="head" id="main">
         <div class="headText">
             <h1 class="title">Cats Fanpage</h1>
             <h4>This page is dedicated to cats, only cats and no one else but cats!</h4>
-            <button type="button" class="btn"><a class="btn1a"
-            href="https://www.youtube.com/watch?v=JxS5E-kZc2s&ab_channel=NoCATNoLiFE2">Click Me!</a></button>
+            <button type="button" class="btn1"><a class="btn1a"
+                    href="https://www.youtube.com/watch?v=JxS5E-kZc2s&ab_channel=NoCATNoLiFE2">Click Me!</a></button>
         </div>
-       
-        <img class="headImg" src="../images/q7.jpg" alt="cat">        
+
+        <img class="headImg" src="../images/q7.jpg" alt="cat">
     </div>
-    
-    <div class="pictures">
+
+    <div class="pictures" id="pict">
         <h2 class="infoTitle">Pictures of Cats</h2>
         <div class="pict">
             <div class="imDiv">
@@ -44,13 +61,12 @@
             </div>
         </div>
     </div>
-    
     <div class="quote">
         <p><em>“Just watching my cats can make me happy.”</em> <br></p>
         <p class="author">– Paula Cole</p>
     </div>
     <br>
-    <div class="container">
+    <div class="container" id="breeds">
         <h2>Cat breeds</h2>
         <div class="bigCats">
             <div class="panel" style="background-image: url('../images/abyssinian.jpg')">
@@ -69,11 +85,21 @@
                 <h3>Sphynx</h3>
             </div>
         </div>
-    </div>  
-    
+    </div>
+    <div class="questions" id="questions">
+        <h2 class="questionsTitle"><strong>Questions?</strong></h2>
+        <br>
+        <div class="questionsText" id="contact">
+            <p>Contact us with any questions! <br> Don't even try, we haven't implemented this feature yet </p>
+            <button type="button" class="btn2">Contact</button>
+        </div>
+
+    </div>
+
     <div class="footer">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
 
 </body>
+
 </html>
